@@ -1,4 +1,3 @@
-
 //Elgatha Lee
 //April 13, 2014
 //Project 3 SDI 1404
@@ -74,50 +73,14 @@ var customStop = function(inspect) {
 
 
 
-//NUMBER FUNCTION, LOCAL VARIABLES, WHILE LOOP, MATH, RETURN NUMNBER
 
-var gifts = function(cash) {
-	var receiptTotal = 325;
-	cashTotal = 325;
-
-//WHILE LOOP START
-
-while(cashTotal >= 325)
-		{
-			//NESTED CONDITIONAL
-			if (cash < receiptTotal)
-			{
-
-				console.log("I have enough moolah to to buy what I need to. Yay!");
-
-				cashTotal = receiptTotal;
-				
-										}
-
-										//NESTED CONDITIONAL
-
-										else
-										{
-											cashTotal = Math.floor(cash - receiptTotal);
-
-										}
-
-										return cashTotal;
-
-			};
-
-				//WHILE LOOP STOP
-
-		};
-
-		var shoping = gifts(500);
 
 //STRING FUNCTION, LOCAL VARIABLES, STRING CONCATENTATION, RETURN STRING
 
-var inspection = function(){
+var inspection = function(argArray){
 
 			var customsAgent = ["bca", "bci", "cops"];
-			viewsPerSteps = customsAgent.length;
+			var viewsPerStepsLength = customsAgent.length;
 
 			airportstop("Leaving Nassau " + customsAgent + " stopped me for inspection after " + viewsPerSteps + "steps. Seriously?!");
 
@@ -174,43 +137,6 @@ else {return false;}
 
 };
 
-//NUMBER FUNCTION, LOCAL VARIABLES, WHILE LOOP, MATH, RETURN NUMNBER
-
-var gifts = function(cash) {
-	var receiptTotal = 325;
-	cashTotal = 325;
-
-//WHILE LOOP START
-
-while(cashTotal >= 325)
-		{
-			//NESTED CONDITIONAL
-			if (cash < receiptTotal)
-			{
-
-				console.log("I have enough moolah to to buy what I need to. Yay!");
-
-				cashTotal = receiptTotal;
-				
-										}
-
-										//NESTED CONDITIONAL
-
-										else
-										{
-											cashTotal = Math.floor(cash - receiptTotal);
-
-										}
-
-										return cashTotal;
-
-			};
-
-				//WHILE LOOP STOP
-
-		};
-
-		var shoping = gifts(500);
 
 
 //STRING FUNCTION, LOCAL VARIABLES, STRING CONCATENTATION, RETURN STRING
@@ -229,11 +155,11 @@ var myJSON = function() {
 	
 	for (var key in jsonData.bahamasCustomsAgents) {
 		
-				for  (var newKey in jsonData.bahamasCustomsAgents[key]) {
+				for  (var Key in jsonData.bahamasCustomsAgents[key]) {
 					
-					if (newKey === "agentName") {
+					if (key === "agentName") {
 					
-						console.log(newkey + ";" + bahamasCustomsAgents[key][newKey]);
+						console.log(key + ";" + bahamasCustomsAgents[key][key]);
 				     
 					}
 				}
@@ -252,25 +178,15 @@ var say = function(myMessage)
 	console.log(myMessage)
 };
 
-var bca = 
-
-			//THIS IS A PROPERT STORED FOR AN OBJECT
-					bcaNumber: "2257";
-					bcaName: "Davis";
-
-			//METHOD FUNCTION STORED FOR AN OBJECT
-					beginInspection: function ()
-					
-					{
+var bca = function() 
+{
 						console.log("bca officer " + bca.bcaName + " with collar number " + bca.bcaNumber + " asks me to step out of the line so that my Oakley bag can be inspected, because it is suspicious");
 					}
-			};
+			
 //RETURN
 say(myMessage)
 
 //RETURN METHOD
-bca.beginInspection();
-
 bca.beginInspection = function() {
 	
 	console.log("Inspection was completed by the bca officer " + bca.bcaName);
@@ -280,19 +196,6 @@ bca.beginInspection = function() {
 
 //FOR EACH KEY IN THE PHASE
 
-for var key in bca)
-{
-	//THIS IS GOING TO CONVERT ALL LOOPS TO STRINGS
-	//console.log("key " + key + ", security " + phase[key]);
-	//COMMA IS USED TO SEE THE RAW VALUES
-	//console.log("Raw Values View -> key: " + key + ", value " bca[key]);
-	
-				//NESTED LOOP
-				for (var key in bca)
-						{
-							concole.log("key " + key + ", security " + phase[key]);
-						};
-};
 
 //RETURN
 bca["beginInspection"]();
@@ -339,7 +242,7 @@ console.log("I have a lot of decisions to make over the next few months, like re
 bahamianStatus(100);
 
 //RETURN HOW MUCH MONEY TO SPEND SHOPPING
-goShopping(1000);
+goShopping(500);
 
 //RETURN HOW MANY TIMES INSPECTED BY CUSTOMS
 customsStop(2);
@@ -370,8 +273,6 @@ var myProcedure = function(argArray) {
 };
 
 	console.log("It was really great to see " + argArray + "."); 
-
-};
 
 //MAIN CODE w/ FUNCTION CALLS
 
