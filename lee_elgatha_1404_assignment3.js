@@ -14,6 +14,42 @@ console.log(myFamily);
 console.log(myFamily + " That's everyone!")
 
 var jsonData = {
+	
+	"bahamasCustomsAgents": [
+	
+				{
+					"agentName" : "Davis",
+					"agentNumber" : 2257
+				},
+				{
+					"agentName" : "Cartwright",
+					"agentNumber" : 6650
+				},
+				
+			]
+		
+}
+					
+
+
+
+
+var myJSON = function() {
+	
+	for (var key in jsonData.bahamasCustomsAgents) {
+		
+				for  (var newKey in jsonData.bahamasCustomsAgents[key]) {
+					
+					if (newKey === "agentName") {
+					
+						console.log(newkey + ";" + bahamasCustomsAgents[key][newKey]);
+				     
+					}
+				}
+	}
+}
+
+
 
 
 //STRING
@@ -317,13 +353,29 @@ timeWithFamily(96);
 //FUNCTIONS
 var myProcedure = function(argArray) {
 
+	var familyLength = argArray.length;
+
+	console.log("For my GrandMother's 90th Birthday we had " + familyLength + " lines of family there. It was pretty awesome!");
+	console.log("Everyone came together; my,  " + argArray + " I was moved by the show of solidarity");
+
+	for (var i = 0; i < familyLength; i++) {
+
+		console.log("There was my " + argArray[i] + ".")
+
+
+	};
+		console.log("Everyone was there except my Aunt Debra, I was disappointed in that, but didn't let it bother me.")
+
+
+};
+
 	console.log("It was really great to see " + argArray + "."); 
 
 };
 
 //MAIN CODE w/ FUNCTION CALLS
 
-myProcedure(myFamily);
+//myProcedure(myFamily);
 //RETURN BLOOD
 
 myJSON();
