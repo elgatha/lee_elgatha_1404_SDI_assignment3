@@ -13,6 +13,7 @@ var myFamily = ["Mum", " Sister", " Brother", " Nieces", " Brother-in-Law", " Au
 console.log(myFamily);
 console.log(myFamily + " That's everyone!")
 
+var jsonData = {
 
 
 //STRING
