@@ -40,7 +40,6 @@ var pureBlood = 100;
 //ARRAY
 
 var customsAgents = ["bca","bci","agents"];
-
 var bahamasCustoms = "Davis";
 var errands = function(inspect) {
 	console.log(inspect);
@@ -130,8 +129,6 @@ var myProcedure = function(argArray) {
 
 
 	};
-		console.log("my Mum, made a rare appearance, which I think, was great");
-		console.log("Everyone was there except my Aunt Debra, I was disappointed in that, but didn't let it bother me. It was really great to see " + argArray + "."); 		 
 		console.log("My Mum, made a rare appearance, which I think, was greatEveryone was there except my Aunt Debra, I was disappointed in that, but didn't let it bother me. It was really great to see " + argArray + " I have a lot of decisions to make over the next few months, if I plan on relocating."); 		 
 };
 
@@ -192,6 +189,4 @@ customsStop("When I was leaving Nassau, I was stopped for inspection with Custom
             var customsAgent = "Davis";
                 inspectionsPerSuitcase = customsAgent.length;
 checkPoint("Leaving Nassau, I am stopped by " + customsAgent + " he has to check my bags to make sure I'm not carrying any endangered reef or coral. He went throught my suitcaseses " + inspectionsPerSuitcase + " times in 45 minutes. What the hell?");
-			};
-console.log("I have a lot of decisions to make over the next few months, like relocating.");
 			};
