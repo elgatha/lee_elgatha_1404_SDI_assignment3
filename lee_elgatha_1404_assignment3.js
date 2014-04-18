@@ -27,6 +27,7 @@ var myFamily = ["Mum", " Sister", " Brother", " Nieces", " Brother-in-Law", " Au
 
 console.log(myFamily + " That's everyone!")
 
+var customsAgents = ["bca","bci","agents"];
 
 //STRING
 
@@ -67,6 +68,17 @@ else {return true;}
 			
 //FUNCTIONS
 
+//STRING FUNCTION, LOCAL VARIABLES, STRING CONCATENTATION, RETURN STRING
+
+var inspection = function(argArray) {
+var customsAgents = ["bca","bci","agents"];
+            var customsAgentsLength = argArray.length;
+            var viewsPerSteps = customsAgents.length;
+
+            console.log("Leaving Nassau " + customsAgentsLength + " agents stopped me for inspection after " + viewsPerSteps + "steps. I mean Seriously?!");
+
+        };
+
 var myProcedure = function(argArray) {
 
 	var familyLength = argArray.length;
@@ -106,6 +118,7 @@ var myJSON = function() {
 
 myProcedure(myFamily);
 myJSON();
+inspection(customsAgents);
 
 //STRING FUNCTION, LOCAL VARIABLES, STRING CONCATENTATION, RETURN STRING
             var giftsToTake = function(){
