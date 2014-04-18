@@ -36,7 +36,37 @@ var myNationality = "Bahamian";
 
 var pureBlood = 100;
 
+//ARRAY
+
+var customsAgents = ["bca","bci","agents"];
+
+
+//BOOLEAN FUNCTION
+
+var bahamianStatus = function(pureBlood) {
+	
+	var blood = function(mum, grandmum) {
+		var bloodResult = mum / grandmum;
+		
+		return (bloodResult === Math.floor(bloodResult));
+		
+	};
+//CONDITIONAL
+if (pureBlood(bloodStatus, 20)) {return false;}
+
+//NESTED  CONDITIONAL
+else if (pureBlood(bloodStatus, 100)) {return true;}
+
+//NESTED CONDITIONAL
+else if (pureBlood(bloodStatus, 80)) {return true;}
+
+//NESTED CONDITIONAL
+else {return true;}
+
+};
+			
 //FUNCTIONS
+
 var myProcedure = function(argArray) {
 
 	var familyLength = argArray.length;
@@ -51,6 +81,7 @@ var myProcedure = function(argArray) {
 		console.log("my Mum, made a rare appearance, which I think, was great");
 		console.log("Everyone was there except my Aunt Debra, I was disappointed in that, but didn't let it bother me. It was really great to see " + argArray + "."); 		 
 };
+
 
 var myJSON = function() {
 	
@@ -80,3 +111,10 @@ myProcedure(myFamily);
 myJSON();
 
 
+//STRING FUNCTION, LOCAL VARIABLES, STRING CONCATENTATION, RETURN STRING
+            var giftsToTake = function(){
+            var customsAgent = "Davis";
+                inspectionsPerSuitcase = customsAgent.length;
+checkPoint("Leaving Nassau, I am stopped by " + customsAgent + " he has to check my bags to make sure I'm not carrying any endangered reef or coral. He went throught my suitcaseses " + inspectionsPerSuitcase + " times in 45 minutes. What the hell?");
+			};
+console.log("I have a lot of decisions to make over the next few months, like relocating.");
