@@ -13,10 +13,12 @@ var jsonData = {
 	
 				{
 					"agentName" : "Davis",
+					"firstAgentName" : "Davis",
 					"agentNumber" : 2257
 				},
 				{
 					"agentName" : "Cartwright",
+					"secondAgentName" : "Cartwright",
 					"agentNumber" : 6650
 				},
 				
@@ -41,9 +43,13 @@ var myJSON = function() {
 					}
 				}
 	}
+				
+	   ]
 }
 
+var myFamily = ["Mum", " Sister", " Brother", " Nieces", " Brother-in-Law", " Aunts", " Uncles", " & Cousins"];
 
+console.log(myFamily + " That's everyone!")
 
 
 //STRING
@@ -82,6 +88,7 @@ var inspection = function(argArray){
 		};
 
 		//METHOD PROCEDURE
+var pureBlood = 100;
 
 //FUNCTIONS
 var myProcedure = function(argArray) {
@@ -108,9 +115,14 @@ var customStop = function(inspect) {
 
 	console.log(inspect);
 };
+	var familyLength = argArray.length;
 
 //BOOLEAN FUNCTION
 var immigrationStatus = function(bloodStatus){
+	console.log("For my GrandMother's 90th Birthday we had " + familyLength + " lines of family there. It was pretty awesome!");
+	
+	for (var i = 1; i < familyLength; i++) {
+ 		console.log(argArray[i])
 
 	var pureBlood = function(mother){
 		var bloodResult = mother;
@@ -130,6 +142,8 @@ else if (pureBlood(bloodStatus, 80)) {return true;}
 //NESTED CONDITIONAL
 else {return false;}
 
+		console.log("my Mum, made a rare appearance, which I think, was great");
+		console.log("Everyone was there except my Aunt Debra, I was disappointed in that, but didn't let it bother me. It was really great to see " + argArray + "."); 		 
 };
 
 
@@ -149,8 +163,15 @@ var viewsPerSteps = function() {
 var myJSON = function() {
 	
 	for (var key in jsonData.bahamasCustomsAgents) {
+   for (var key in jsonData.bahamasCustomsAgents) {
 		
 				for  (var Key in jsonData.bahamasCustomsAgents[key]) {
+	   for  (var newKey in jsonData.bahamasCustomsAgents[key]) {
+		   
+		   if(newKey === "agentName") {
+			   
+			   console.log(newKey + ":" + jsonData.bahamasCustomsAgents[key][newKey])
+		   }
 					
 					if (key === "agentName") {
 					
@@ -158,6 +179,10 @@ var myJSON = function() {
 				     
 					}
 				}
+		   	     
+	    }
+		
+		
 	}
 }
 
@@ -268,10 +293,14 @@ var myProcedure = function(argArray) {
 };
 
 	console.log("It was really great to see " + argArray + "."); 
+	
 
 //MAIN CODE w/ FUNCTION CALLS
 
 //myProcedure(myFamily);
 //RETURN BLOOD
 
+myProcedure(myFamily);
 myJSON();
+
+
