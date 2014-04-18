@@ -102,14 +102,10 @@ var myJSON = function() {
 	
 }
 
-
-	
-
 //MAIN CODE w/ FUNCTION CALLS
 
 myProcedure(myFamily);
 myJSON();
-
 
 //STRING FUNCTION, LOCAL VARIABLES, STRING CONCATENTATION, RETURN STRING
             var giftsToTake = function(){
