@@ -7,11 +7,6 @@
 
 //GLOBAL VARIABLES
 
-var myFamily = ["Mum", " Sister", " Brother", " Nieces", " Brother-in-Law", " Aunts", " Uncles", " & Cousins"];
-
-console.log(myFamily);
-console.log(myFamily + " That's everyone!")
-
 var jsonData = {
 	
 	"bahamasCustomsAgents": [
